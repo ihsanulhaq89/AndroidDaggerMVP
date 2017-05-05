@@ -23,11 +23,15 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
-//    compile 'com.google.dagger:dagger:2.9'
-//    apt 'com.google.dagger:dagger-compiler:2.9'
-//    compile 'com.google.dagger:dagger-compiler:2.9'
-//    compile 'javax.inject:javax.inject:1'
 
+    //Retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+
+    // RxJava
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    // Dagger 2.0
     compile 'com.google.dagger:dagger:2.9'
     apt 'com.google.dagger:dagger-compiler:2.9'
     provided 'javax.annotation:jsr250-api:1.0'

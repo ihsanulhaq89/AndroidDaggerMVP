@@ -1,11 +1,11 @@
-package com.mvp.dagger.androiddaggermvp;
+package com.mvp.dagger.androiddaggermvp.main;
 
 import javax.inject.Singleton;
 
 import dagger.Component;
 
 /**
- * Created by Ihsanulhaq Pervez on 2/22/2017.
+ * Created by Ihsanulhaq on 2/22/2017.
  */
 @Singleton
 @Component(modules = MainPresenterModule.class)
