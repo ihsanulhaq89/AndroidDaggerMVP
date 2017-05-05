@@ -2,6 +2,8 @@ package com.mvp.dagger.androiddaggermvp.dtos;
 
 import android.support.annotation.DrawableRes;
 
+import javax.inject.Inject;
+
 /**
  * Created by Ihsanulhaq on 4/10/2017.
  */
@@ -9,6 +11,14 @@ public class User {
     private int ssn;
     private String firstName;
     private String lastName;
+
+    @Inject
+    public User() {
+        this.ssn = 0;
+        this.firstName = "";
+        this.lastName = "";
+    }
+
 
     public User(int ssn, String firstName, String lastName) {
         this.ssn = ssn;

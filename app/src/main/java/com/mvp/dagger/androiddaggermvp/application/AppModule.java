@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class AppModule {
 
-    private final String serverUrl = "<Add url here>";
+    private final String serverUrl = "https://api.nasa.gov/";
 
     @Provides
     public Retrofit getRetrofitObject(){
