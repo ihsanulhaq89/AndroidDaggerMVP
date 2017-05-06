@@ -29,7 +29,7 @@ public class ApiManager {
     }
 
     public static ApiManager getInstance() {
-        if (instance != null) {
+        if (instance == null) {
             instance = new ApiManager();
         }
         return instance;

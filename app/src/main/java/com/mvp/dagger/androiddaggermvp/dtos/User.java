@@ -13,8 +13,8 @@ public class User {
     private String lastName;
 
     @Inject
-    public User() {
-        this.ssn = 0;
+    public User(String ssn) {
+        this.ssn = ssn;
         this.firstName = "";
         this.lastName = "";
     }
@@ -30,6 +30,7 @@ public class User {
         return ssn;
     }
 
+    @Inject
     public void setSsn(int ssn) {
         this.ssn = ssn;
     }

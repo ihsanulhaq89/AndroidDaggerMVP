@@ -12,9 +12,8 @@ import retrofit2.Retrofit;
 public class MainPresenterImpl implements MainPresenter{
     private final Retrofit retrofit;
     private MainView mainView;
-    ApiManager apiManager;
 
-    public MainPresenterImpl(MainView mainView, Retrofit retrofit) {
+    public MainPresenterImpl(MainView mainView, Retrofit retrofit, ApiManager apiManager) {
 
         this.mainView = mainView;
         this.retrofit = retrofit;
